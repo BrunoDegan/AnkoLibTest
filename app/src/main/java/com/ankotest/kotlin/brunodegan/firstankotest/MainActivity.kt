@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 		
 		reacPermissions.observeResultPermissions().subscribe { event ->
 			if (event.first == Manifest.permission.CALL_PHONE && event.second)
-				makeCall("981141974")
+				makeCall(getString(R.string.phone_number))
 			else if (event.first == Manifest.permission.SEND_SMS && event.second)
 				startActivity<SmsActivity>(texto_inicial to "Ola\n\n")
 			}

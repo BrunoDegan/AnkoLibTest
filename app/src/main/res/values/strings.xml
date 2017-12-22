@@ -34,4 +34,6 @@
     </string>
 
     <string name="enviar_button">Enviar</string>
+
+    <string name="phone_number">000000000</string>
 </resources>
